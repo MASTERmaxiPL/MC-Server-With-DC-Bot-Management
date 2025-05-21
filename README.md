@@ -52,8 +52,10 @@ pip install -r requirements.txt
 ```
 
 ### 4. Clone Repo (on dc-server-bot)
+```
 git clone https://github.com/MASTERmaxiPL/mc-discord-bot.git
 cd mc-discord-bot
+```
 
 ### 5. Configure .env
 ```
@@ -139,6 +141,7 @@ sudo journalctl -u mc-bot -f
 sudo journalctl -u mc-monitor -f
 ```
 ## 🔁 Updating Code or .env
+After any changes made use:
 ```bash
 sudo systemctl restart mc-bot.service
 sudo systemctl restart mc-monitor.service
