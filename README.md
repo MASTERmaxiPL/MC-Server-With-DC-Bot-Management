@@ -47,7 +47,9 @@ source botenv/bin/activate
 ```
 
 # Install required Python packages
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Clone Repo (on dc-server-bot)
 git clone https://github.com/MASTERmaxiPL/mc-discord-bot.git
