@@ -39,11 +39,12 @@ ssh-copy-id root@<MC_SERVER_IP>
 ```
 
 ### 3. Install Dependencies (on dc-server-bot)
-
+```bash
 sudo apt update
 sudo apt install python3-pip python3-venv screen git
 python3 -m venv botenv
 source botenv/bin/activate
+```
 
 # Install required Python packages
 pip install -r requirements.txt
