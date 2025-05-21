@@ -1,0 +1,15 @@
+[Unit]
+Description=Minecraft Server Monitor
+After=network.target mc-bot.service
+Requires=mc-bot.service
+
+[Service]
+WorkingDirectory=/root/mc-discord-bot
+ExecStart=/root/botenv/bin/python /root/mc-discord-bot/monitor.py
+Restart=always
+RestartSec=5
+Environment="PYTHONUNBUFFERED=1"
+EnvironmentFile=/root/mc-discord-bot/.env
+
+[Install]
+WantedBy=multi-user.target

@@ -74,6 +74,9 @@ SSH_HOST=
 SSH_USER=root
 SSH_KEY_PATH=/root/.ssh/id_rsa
 
+DROPLET_ID=
+DROPLET_IP=
+
 # Allowed Hours per Day
 ALLOWED_HOURS_MON=
 ALLOWED_HOURS_TUE=
