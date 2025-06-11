@@ -40,7 +40,7 @@ for day in ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]:
 def get_current_hour():
     tz = pytz.timezone(TIMEZONE)
     now = datetime.now(tz)
-    return now.weekday(), now.hour, now.minute
+    return now.strftime("%a").upper(), now.hour, now.minute
 
 def is_within_allowed_hours():
     weekday, hour, _ = get_current_hour()
